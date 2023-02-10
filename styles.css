@@ -1,0 +1,548 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: rgb(32,32,32);
+    background-color: #fffefe;
+}
+
+
+
+.btn {
+    color: #fffefe;
+    border-radius: 20px;
+    height: 60px;
+    width: 150px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    background-color: #e2B097; 
+    border: 1px solid #fae4d4;
+
+}
+
+.btn:hover {
+    background-color: #fae4d4;
+    color: #202020;
+    border: 1px solid #e2B097;
+}
+
+.otherbtn {
+    color: #202020;
+    background-color: #fae4d4;
+}
+
+.otherbtn:hover {
+    background-color: #e2B097;
+    color: #fffefe;
+    border: 1px solid #fae4d4;
+}
+
+
+.bold {
+    font-weight: 900;
+}
+/* ====== HEADER ===== */
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(32,32,32,0.8);
+    padding-right: 2rem;
+    padding-left: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+header img {
+    height: 80px;
+}
+
+.navbar a img {
+    height: 30px;
+}
+
+.container-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1rem;
+} 
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+/* ====== HERO ==== */
+
+.container-hero {
+   margin-top: 4.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: #e2B097;
+}
+
+.heroimg img {
+    width: 500px;
+    padding-right: 2rem;
+}
+
+.textleft {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+.inicio {
+    font-size: 20px;
+    padding-left: 4rem;
+}
+
+.question {
+    padding-top: 2rem;
+    padding-left: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.resposta {
+    margin-left: 8rem;
+    padding-left: 1rem;
+    border-left: 5px solid black;
+}
+
+/*===== METODO ===== */
+
+.metodo {
+    text-align: center;
+    background-color: #fae4d4;
+    padding: 3rem;
+}
+
+.metodo h2 {
+    margin-bottom: 0;
+}
+
+.nota {
+ margin-top: 0;
+}
+
+.metodo2b {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    font-size: 80px;
+    margin: 0;
+}
+.formattext {
+    max-width: 500px;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.desenvolvimento {
+    text-align: left;
+}
+
+/*========SERVIÇOS=======*/
+.servicos {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    background-color: rgb(241, 239, 239);
+}
+/*===== SESSOES HOMEPAGE ==== */
+
+.sessoes2 {
+    padding: 2rem;
+    text-align: right;
+    max-width: 750px;
+}
+
+.sessoes2 h2 {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.serparecer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.packs {
+    background-color: #fae4d4;
+    padding: 1rem;
+    width: 290px;
+    margin: 5px;
+    text-align: left;
+    border: 3px solid #e2B097;
+}
+
+.pack-top {
+    text-align: center;
+    background-color: #e2B097;
+}
+
+.pack-top img {
+    height: 70px;
+}
+
+.textoparecer img {
+    width: 300px;
+}
+/* ==== EVENTOS HOMEPAGE==== */
+
+.eventos {
+    padding: 8rem;
+    background-image: url(./img/eventosbackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fffefe;
+    max-width: 500px;
+}
+
+.eventos p {
+  font-size: 22px;
+  padding-bottom: 2rem;
+}
+
+.eventos p span{
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .inicio {
+        padding-left: 1rem;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .resposta {
+        margin-left: 2rem;
+    }
+    .question {
+        padding-left: 2rem;
+    }
+    .imgsessoes img {
+        width: 450px;
+    }
+    .eventos {
+        padding: 2rem;
+    }
+    .heroimg img {
+        width: 400px;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .imgsessoes img {
+        width: 350px;
+    }
+    .eventos {
+        padding: 1rem;
+    }
+    .maisinfo p, .eventos p {
+        font-size: 18px;
+    }
+    .mission {
+        padding: 1.5rem;
+    }
+}
+
+/* ====== CONTACTOS ===== */ 
+
+.footer {
+    color: #fff;
+    background-color: rgba(32,32,32,0.8);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.credits {
+    padding-top: 2rem;
+}
+
+.contacts h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.contacts p {
+   margin-top: 0;
+   font-size: 20px;
+}
+
+.contactdetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contactdetails img {
+    height: 100px;
+}
+.mail p {
+    padding-right: 0.7rem;
+}
+
+.instalogo img {
+    height: 80px;
+}
+
+.mail a {
+    color: #fff;
+}
+
+.mail a:hover {
+    color: #e2B097;
+}
+
+.credits p a {
+  color: #fffefe;
+}
+
+/* ==== PAGINA SESSOES === */
+
+.sessoes {
+    margin-top: 4rem;
+    background-color: #dad8d8;
+}
+
+.sereparecer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.cent {
+    text-align: center;
+}
+
+.servicos1 {
+    padding-top: 1rem;
+    background-color: #fae4d4;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.servicos2 {
+    padding-top: 2rem;
+    background-color: #e2B097;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #fffefe;
+    padding-bottom: 2rem;
+}
+
+.inverso1 {
+    background-color: #e2B097;
+    color: #fffefe;
+}
+
+.inverso2 {
+    color: #202020;
+}
+
+.oposite2 {
+    background-color: #fae4d4;
+}
+
+.maisinfo {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+/* ===== PAGINA EVENTOS ==== */
+.eventos h3, .pagtandc h3, .texto h3, .proximo h3, .titletestemunhos h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.proximo {
+    padding-top: 4rem;
+    text-align: center;
+    
+}
+
+.proximo img {
+    width: 300px;
+}
+
+.passado {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #dad8d8;
+}
+
+.passado h2 {
+    text-transform: uppercase;
+}
+
+.containerpassado, .video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CARROUSSEL DE IMAGENS*/
+
+.alecrim {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    max-height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /*END SLIDESHOW*/
+.info {
+    text-align: left;
+    padding: 2rem;
+    max-width: 400px;
+    font-size: 20px;
+}
+
+.beneficios {
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.testemunhos {
+    background-color: #dad8d8;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.video {
+    padding: 1rem;
+}
+
+.titletestemunhos {
+    text-align: center;
+}
+
+@media (max-width: 522px) {
+    .beneficios {
+        padding-left: 3rem;
+    }
+}
+
+/* ===== PAGINA Termos & Condiçoes ==== */
+.pagtandc {
+    background-color: #fae4d4;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.tec {
+    text-align: left;
+    margin: 2rem 7rem;
+    padding: 1rem 5rem;
+    background-color: #fffefe;
+}
+
+.tec a {
+    color: #e2B097;
+}
+
+@media (max-width: 657px) {
+    .tec {
+        margin: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 377px) {
+    .tec {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .packs {
+        width: 280px;
+    }
+    .container-nav {
+        font-size: 12px;
+    }
+}
+
+/* PAGINA QUEM SOU */
+
+.texto {
+ padding-top: 5rem;
+ text-align: center;
+}
+
+.descriçao {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 1rem;
+}
+
+.descriçao img {
+    max-width: 300px;
+    padding-right: 0.5rem;
+}
+
+.escrito a {
+    color: #e2B097;
+}
+
+.escrito {
+    padding-left: 5rem;
+}
+
+@media (max-width: 620px) {
+    .descriçao img {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .escrito {
+        padding-left: 1rem;
+    }
+}
+
