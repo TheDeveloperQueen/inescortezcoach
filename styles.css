@@ -352,10 +352,12 @@ header img {
 .inverso1 {
     background-color: #e2B097;
     color: #fffefe;
+    width: 350px;
 }
 
 .inverso2 {
     color: #202020;
+    width: 400px;
 }
 
 .oposite2 {
