@@ -86,23 +86,24 @@ header img {
    margin-top: 4.5rem;
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
    background-color: #e2B097;
 }
 
 .heroimg img {
     width: 500px;
-    padding-right: 2rem;
 }
 
 .textleft {
-    padding-top: 7rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
+    padding-right: 1rem;
+    max-width: 800px;
 }
 
 .inicio {
     font-size: 20px;
-    padding-left: 4rem;
+    padding-left: 3rem;
 }
 
 .question {
@@ -155,32 +156,37 @@ header img {
     text-align: left;
 }
 
-/*========SERVIÇOS=======*/
-.servicos {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    background-color: rgb(241, 239, 239);
-}
 /*===== SESSOES HOMEPAGE ==== */
 
 .sessoes2 {
     padding: 2rem;
-    text-align: right;
-    max-width: 750px;
+    background-color: #fffefe;
 }
 
 .sessoes2 h2 {
     text-transform: uppercase;
+}
+
+.backgroundpacks {
+    background-color: rgb(241, 239, 239);
+    padding: 1rem;
+}
+
+.esq {
     text-align: right;
 }
 
 .serparecer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
 }
 
+.metodoimg {
+    max-height: 600px;
+    padding: 2rem;
+}
 .packs {
     background-color: #fae4d4;
     padding: 1rem;
@@ -202,6 +208,55 @@ header img {
 .textoparecer img {
     width: 300px;
 }
+
+/*==== TESTEMUNHOS =====*/
+
+.section-title {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slide {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 15px;
+  width: 600px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.quote-icon-left, .quote-icon-right {
+  color: #e2B097;
+}
+
+.quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+  font-size: 40px;
+}
+
+.quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  font-size: 25px;
+}
+
+.slide p {
+  font-style: italic;
+  margin: 30px auto 15px auto;
+  font-size: 14px;
+}
+  
 /* ==== EVENTOS HOMEPAGE==== */
 
 .eventos {
@@ -210,7 +265,6 @@ header img {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fffefe;
-    max-width: 500px;
 }
 
 .eventos p {
@@ -222,46 +276,6 @@ header img {
     font-weight: 600;
 }
 
-@media (max-width: 700px) {
-    .inicio {
-        padding-left: 1rem;
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 600px) {
-    .resposta {
-        margin-left: 2rem;
-    }
-    .question {
-        padding-left: 2rem;
-    }
-    .imgsessoes img {
-        width: 450px;
-    }
-    .eventos {
-        padding: 2rem;
-    }
-    .heroimg img {
-        width: 400px;
-        padding-right: 1rem;
-    }
-}
-
-@media (max-width: 460px) {
-    .imgsessoes img {
-        width: 350px;
-    }
-    .eventos {
-        padding: 1rem;
-    }
-    .maisinfo p, .eventos p {
-        font-size: 18px;
-    }
-    .mission {
-        padding: 1.5rem;
-    }
-}
 
 /* ====== CONTACTOS ===== */ 
 
@@ -332,6 +346,10 @@ header img {
     text-align: center;
 }
 
+.imgsessoes {
+    max-height: 450px;
+}
+
 .servicos1 {
     padding-top: 1rem;
     background-color: #fae4d4;
@@ -352,7 +370,7 @@ header img {
 .inverso1 {
     background-color: #e2B097;
     color: #fffefe;
-    width: 350px;
+    width: 400px;
 }
 
 .inverso2 {
@@ -368,6 +386,10 @@ header img {
     padding-bottom: 2rem;
     padding-top: 2rem;
     text-align: center;
+}
+
+.pacotecompleto {
+    font-size: 10px;
 }
 /* ===== PAGINA EVENTOS ==== */
 .eventos h3, .pagtandc h3, .texto h3, .proximo h3, .titletestemunhos h3{
@@ -407,7 +429,7 @@ header img {
 
 /*CARROUSSEL DE IMAGENS*/
 
-.alecrim {
+.alecrim .testemunhosimg {
     box-sizing: border-box;
 }
 
@@ -496,19 +518,7 @@ header img {
     }
 }
 
-@media (max-width: 377px) {
-    .tec {
-        margin: 1rem;
-        padding: 1rem;
-        font-size: 16px;
-    }
-    .packs {
-        width: 280px;
-    }
-    .container-nav {
-        font-size: 12px;
-    }
-}
+
 
 /* PAGINA QUEM SOU */
 
@@ -528,6 +538,10 @@ header img {
     padding-right: 0.5rem;
 }
 
+.underline {
+ text-decoration: underline;
+}
+
 .escrito a {
     color: #e2B097;
 }
@@ -536,11 +550,140 @@ header img {
     padding-left: 5rem;
 }
 
+/*RESPONSIVE*/
+
+@media (max-width: 1352px) {
+    .heroimg img {
+        width: 450px;
+    }
+    .textleft {
+        padding-top: 3.5rem;
+    }
+}
+
+@media (max-width: 1302px) {
+    .textleft {
+        max-width: 700px;
+    }
+    
+    .inicio {
+        font-size: 18px;
+        padding-left: 2rem;
+    }
+    
+    .question {
+        padding-left: 5rem;
+    }
+    
+    .resposta {
+        margin-left: 6rem;
+        padding-left: 1rem;
+        border-left: 5px solid black;
+    }
+}
+
+@media (max-width: 1202px) {
+    .textleft {
+        max-width: 600px;
+    }
+    .packs {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 1067px) {
+    .textleft {
+        font-size: 16px;
+        max-width: 500px;
+        padding-top: 2rem;
+    }
+
+    .inicio {
+        font-size: 16px;
+        padding-left: 1rem;
+    }
+    .heroimg img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1067px) {
+    .textleft {
+        font-size: 16px;
+        max-width: 450px;
+    }  
+}
+
+@media (max-width: 1013px) {
+    .metodoimg {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 866px) {
+    .question {
+        padding-left: 2rem;
+    }
+    
+    .resposta {
+        margin-left: 2.5rem;
+        padding-left: 1rem;
+        border-left: 5px solid black;
+    } 
+    .textleft {
+        max-width: 380px;
+     }
+}
+
+@media (max-width: 797px) {
+    .textleft {
+        max-height: 700px;
+     }
+}
+
+@media (max-width: 784px) {
+    .sessoes {
+        margin-top: 7.5rem;
+    }
+    .heroimg {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 722px) {
+    .eventos {
+        padding: 6rem;
+    }
+}
+
 @media (max-width: 620px) {
     .descriçao img {
         display: none;
     }
+    .eventos p {
+        font-size: 18px;
+    }
+    .eventos {
+        padding: 4rem;
+    }
 }
+
+@media (max-width: 520px) {
+    .maisinfo img {
+        width: 400px;
+    }
+    .servicos1, .servicos2 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .info, .beneficios ul li {
+        font-size: 18px;
+    }
+    .heroimg {
+        padding-top: 3rem;
+    }
+}
+
 
 @media (max-width: 460px) {
     .escrito {
@@ -548,3 +691,37 @@ header img {
     }
 }
 
+@media (max-width: 435px) {
+    .container-nav {
+        font-size: 12px;
+    }
+    .eventos {
+        padding: 2rem;
+    }
+    .servicos1 p, .textoparecer, .preco ul li, .tempo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 377px) {
+    .tec {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 16px;
+    }
+    .packs {
+        width: 260px;
+    }
+    .maisinfo img {
+        width: 350px;
+    }
+    .beneficios {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .container-nav .artigos {
+        display: none;
+    }
+}
